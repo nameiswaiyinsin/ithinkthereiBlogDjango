@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-nameiswaiyi-ithinkthere-zxjdhqx16hs.ws-eu104.gitpod.io']
+ALLOWED_HOSTS = ['8000-nameiswaiyi-ithinkthere-zxjdhqx16hs.ws-eu105.gitpod.io']
 
 
 # Application definition
@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'django_summernote',
+    'crispy_forms',
     'blog',
 ]
 
@@ -57,6 +58,8 @@ SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # To prevent 500 errors during login and registration, you need to make a one line addition to your settings.py file
 ACCOUNT_EMAIL_VERIFICATION = 'none'
